@@ -47,7 +47,7 @@ public class GreedyApproach {
 			if (List.get(i).GetTaken() > 0 ) {
 			answer = answer + List.get(i).GetName() + 
 					" x " + List.get(i).GetTaken() + " ";	
-			}	
+			}
 		}
 		return answer;
 	}
