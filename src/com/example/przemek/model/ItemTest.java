@@ -24,6 +24,22 @@ public class ItemTest {
 	}
 	
 	@Test
+	public void valueZeroHighTest() {
+		itemOne.SetValue(0);
+		itemOne.SetWeight(10);
+		itemOne.makeValueRatio();
+		assertTrue("item value ratio is not 0", itemOne.getValueRatio() == 0);
+	}
+	
+	@Test
+	public void valueHighZeroTest() {
+		itemOne.SetValue(20);
+		itemOne.SetWeight(0);
+		itemOne.makeValueRatio();
+		assertTrue("item value ratio is not 20", itemOne.getValueRatio() == 20);
+	}
+	
+	@Test
 	public void valueNegativeTest() {
 		itemOne.SetValue(-10);
 		itemOne.SetWeight(-5);

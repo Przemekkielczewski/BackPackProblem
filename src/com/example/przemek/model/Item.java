@@ -42,9 +42,9 @@ public class Item {
 	}
 	
 	public void makeValueRatio () {
-		if (this.value == 0 || this.weight == 0) {
-			this.valueRatio = 0;
-		} 
+		if (this.weight == 0) {
+			this.valueRatio = this.value;	
+		}
 		else {
 		this.valueRatio = this.value/this.weight;
 		}
