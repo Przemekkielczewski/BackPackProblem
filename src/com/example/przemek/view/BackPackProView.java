@@ -1,12 +1,12 @@
 package com.example.przemek.view;
 
-import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -221,6 +221,10 @@ public class BackPackProView extends JFrame {
 	
 	public void addPackListener(ActionListener actionListener) {
 		this.packButton.addActionListener(actionListener);
+	}
+	
+	public void DisplayError(String errorMessage) {
+		JOptionPane.showMessageDialog(this, errorMessage);		
 	}
 
 }
