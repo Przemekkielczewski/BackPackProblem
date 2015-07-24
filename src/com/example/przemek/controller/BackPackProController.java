@@ -72,8 +72,10 @@ public class BackPackProController {
 
 				backPackProView.setAnswerText(greedyModel.GreedyMethod(
 						itemsList, 15));
+
 			} 
-			catch (NumberFormatException ex) {
+			 catch (NumberFormatException ex) {
+
 				backPackProView
 						.DisplayError("all spaces must be filled, name with text, others with numbers");
 				return;
