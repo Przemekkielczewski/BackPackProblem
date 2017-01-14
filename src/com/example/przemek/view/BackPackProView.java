@@ -56,10 +56,10 @@ public class BackPackProView extends JFrame {
 		JPanel itemsPanel = new JPanel();
 		JPanel resultPanel = new JPanel();
 
-		nameLabel = new JLabel("Item Name");
-		valueLabel = new JLabel("Value");
-		weightLabel = new JLabel("Weight");
-		amountLabel = new JLabel("Amount");
+		nameLabel = new JLabel(" Item Name");
+		valueLabel = new JLabel(" Value");
+		weightLabel = new JLabel(" Weight");
+		amountLabel = new JLabel(" Amount");
 
 		itemOneName = new JTextField();
 		itemOneValue = new JTextField();
@@ -121,7 +121,7 @@ public class BackPackProView extends JFrame {
 		this.add(itemsPanel);
 
 		instructions = new JLabel(
-				"Insert parameters of items you have and press button. "
+				" Insert parameters of items you have and press button. "
 				+ "You can pack as much as 15 points of weight");
 		packButton = new JButton("What to pack?");
 		answerField = new JTextField();
